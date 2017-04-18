@@ -1,0 +1,10 @@
+td{
+	width: 170px !important;
+}
+
+form{
+	margin: auto;
+	width: 27%;
+    border: 3px solid blue;
+    padding: 10px;
+}
