@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="styles.css">
+	<meta charset="UTF-8">
+	<title>VEM MONSTRO!!!</title>
+</head>
+<body>
+
+	<form action="http://terrivel.herokuapp.com/monster" method="POST">
+		<label>Nome <input name="nome"></label>
+		<label>Num de pedras: <input type="number" name="num_pedras" step="1	"></label>
+		<label>Tamanho das Pedras<input type="range" min="0" max="7" step="0.5" name="tam_pedras"> </label>
+		<label>Céu - Cor1:<input  type="color" name="corCeu1"></label>
+		<label>Céu - Cor2:<input type="color" name="corCeu2"></label>
+		<label for="tipo_pedras">Tipos de pedras:</label>
+		<select name="tipo_pedras" id="tipo_pedras">
+			<option value="">---</option>
+			<option value="marroada">Marroada</option>
+			<option value="ametista">Ametista</option>
+			<option value="topazio">Topazio</option>
+			<option value="espinela">Espinela</option>
+		</select>
+
+		<label>
+			<input name="tipo_pedras_sortidas" type="radio" value="sim">Sim
+		</label>
+		<label>
+			<input name="tipo_pedras_sortidas" type="radio" value="nao">Não
+		</label>
+		<button>Enviar</button>
+	</form>
+
+
+</body>
+</html>
