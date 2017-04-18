@@ -7,30 +7,52 @@
 </head>
 <body>
 
-	<form action="http://terrivel.herokuapp.com/monster" method="POST">
-		<label>Nome <input name="nome"></label>
-		<label>Num de pedras: <input type="number" name="num_pedras" step="1	"></label>
-		<label>Tamanho das Pedras<input type="range" min="0" max="7" step="0.5" name="tam_pedras"> </label>
-		<label>Céu - Cor1:<input  type="color" name="corCeu1"></label>
-		<label>Céu - Cor2:<input type="color" name="corCeu2"></label>
-		<label for="tipo_pedras">Tipos de pedras:</label>
-		<select name="tipo_pedras" id="tipo_pedras">
-			<option value="">---</option>
-			<option value="marroada">Marroada</option>
-			<option value="ametista">Ametista</option>
-			<option value="topazio">Topazio</option>
-			<option value="espinela">Espinela</option>
-		</select>
+	<form action="http://terrivel.herokuapp.com/monster" method="GET">
+		<table>
+			<tr>
+				<td>Nome</th>
+					<td><input name="nome"></th> 
+					</tr>
+					<tr>
+						<td>Num de pedras:</td>
+						<td><input type="number" name="num_pedras" step="1"></td>
+					</tr>
+					<tr>
+						<td>Tamanho das Pedras</td>
+						<td><input type="range" min="0" max="7" step="0.5" name="tam_pedras"></td>
+					</tr>
+					<tr>
+						<td>Céu - Cor1:</td>
+						<td><input  type="color" name="corCeu1"></td>
+					</tr>
+					<tr>
+						<td>Céu - Cor2:</td>
+						<td><input type="color" name="corCeu2"></td>
+					</tr>
+					<tr>
+						<td>Tipos de pedras:</td>
+						<td>
+							<select name="tipo_pedras" id="tipo_pedras">
+								<option value="">---</option>
+								<option value="marroada">Marroada</option>
+								<option value="ametista">Ametista</option>
+								<option value="topazio">Topazio</option>
+								<option value="espinela">Espinela</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>Pedras Sortidas?</td>
+						<td><input name="tipo_pedras_sortidas" type="radio" value="sim">Sim
+							<input name="tipo_pedras_sortidas" type="radio" value="nao">Não
+						</td>
 
-		<label>
-			<input name="tipo_pedras_sortidas" type="radio" value="sim">Sim
-		</label>
-		<label>
-			<input name="tipo_pedras_sortidas" type="radio" value="nao">Não
-		</label>
-		<button>Enviar</button>
-	</form>
-
-
-</body>
-</html>
+					</tr>
+					<tr>
+						<td><button>Enviar</button></td>
+					</tr>
+				</table>
+				
+			</form>
+		</body>
+		</html>
